@@ -2,7 +2,7 @@
 
 **Name of Project:** FVM <-> Substrate Bridge
 
-**Proposal Category:** Multiple categories, including: `app-dev`, `integration-adoption`, `metaverse` , `research`
+**Proposal Category:** Multiple categories, including: `app-dev`, `integration-adoption`, `research`
 
 **Proposer:** `replace with your GitHub username`
 
