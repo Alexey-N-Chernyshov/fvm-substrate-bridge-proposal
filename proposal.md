@@ -97,7 +97,7 @@ features. These include, but are not limited to;
 - Filecoin finalization protocol updates to be used for transaction finalization on substrate.
 - BEEFY protocol updates.
 - Substrate protocol updates.
-- Ffeature request implementations.
+- Feature request implementations.
 
 # Team
 
