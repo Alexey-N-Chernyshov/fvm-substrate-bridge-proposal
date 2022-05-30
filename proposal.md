@@ -113,6 +113,8 @@ features. These include, but are not limited to;
 <!-- - Team Member 1 LinkedIn profile -->
 <!-- - Team Member 2 LinkedIn profile -->
 <!-- - Team Member 3 LinkedIn profile -->
+* [Alexey Chernyshov](https://github.com/Alexey-N-Chernyshov)
+* [Ruslan Tushov](https://github.com/turuslan)
 
 
 ## Team Website
