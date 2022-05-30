@@ -8,7 +8,7 @@
 
 **(Optional) Technical Sponsor:** N/A
 
-**Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT and APACHE2 licenses?: ** Yes
+**Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT and APACHE2 licenses?**:  Yes
 
 # Project Description
 
@@ -113,7 +113,7 @@ features. These include, but are not limited to;
 <!-- - Team Member 1 LinkedIn profile -->
 <!-- - Team Member 2 LinkedIn profile -->
 <!-- - Team Member 3 LinkedIn profile -->
-<!-- - ...
+
 
 ## Team Website
 
