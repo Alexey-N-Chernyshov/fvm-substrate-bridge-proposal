@@ -113,10 +113,9 @@ features. These include, but are not limited to;
 <!-- - Team Member 1 LinkedIn profile -->
 <!-- - Team Member 2 LinkedIn profile -->
 <!-- - Team Member 3 LinkedIn profile -->
-* Alexey Chernyshov [GitHub](https://github.com/Alexey-N-Chernyshov) [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/)
+* Alexey Chernyshov [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov)
 * Vladimir Stepanenko [LinkedIn](https://www.linkedin.com/in/vovac12/)
-* Ruslan Tushov [GitHub](https://github.com/turuslan)
-
+* Ruslan Tushov [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan)
 
 ## Team Website
 
