@@ -113,9 +113,11 @@ features. These include, but are not limited to;
 <!-- - Team Member 1 LinkedIn profile -->
 <!-- - Team Member 2 LinkedIn profile -->
 <!-- - Team Member 3 LinkedIn profile -->
-* Alexey Chernyshov [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov)
-* Vladimir Stepanenko [LinkedIn](https://www.linkedin.com/in/vovac12/)
-* Ruslan Tushov [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan)
+* Alexey Chernyshov - tech lead [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov)
+* Vladimir Stepanenko - substrate pallet developer [LinkedIn](https://www.linkedin.com/in/vovac12/)
+* Ruslan Tushov - cryptographer, filecoin developer [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan)
+* Stefan Popov - frontend developer [LinkedIn](https://www.linkedin.com/in/stefan-popov-072932170/) [GitHub](https://github.com/stefashkaa)
+* Ivan Nikonorov - QA [LinkedIn](https://www.linkedin.com/in/ivan-nikanorov-b6922b174/) [GitHub](https://github.com/ra9mls)
 
 ## Team Website
 
