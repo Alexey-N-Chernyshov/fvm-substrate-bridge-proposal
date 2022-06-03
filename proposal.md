@@ -103,21 +103,11 @@ features. These include, but are not limited to;
 
 ## Team Members
 
-<!-- - Team Member 1 -->
-<!-- - Team Member 2 -->
-<!-- - Team Member 3 -->
-<!-- - ...
-
-## Team Member LinkedIn Profiles
-
-<!-- - Team Member 1 LinkedIn profile -->
-<!-- - Team Member 2 LinkedIn profile -->
-<!-- - Team Member 3 LinkedIn profile -->
-* Alexey Chernyshov - tech lead [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov)
-* Vladimir Stepanenko - substrate pallet developer [LinkedIn](https://www.linkedin.com/in/vovac12/)
-* Ruslan Tushov - cryptographer, filecoin developer [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan)
-* Stefan Popov - frontend developer [LinkedIn](https://www.linkedin.com/in/stefan-popov-072932170/) [GitHub](https://github.com/stefashkaa)
-* Ivan Nikonorov - QA [LinkedIn](https://www.linkedin.com/in/ivan-nikanorov-b6922b174/) [GitHub](https://github.com/ra9mls)
+* Alexey Chernyshov - [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov) - Tech lead,participated in Fuhon - Filecoin C++ implementation.
+* Vladimir Stepanenko - [LinkedIn](https://www.linkedin.com/in/vovac12/) [GitHub](https://github.com/vovac12) - Substrate pallet developer.
+* Ruslan Tushov - [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan) - Cryptographer, filecoin developer, participated in Fuhon - Filecoin C++ implementation.
+* Stefan Popov - [LinkedIn](https://www.linkedin.com/in/stefan-popov-072932170/) [GitHub](https://github.com/stefashkaa) - Frontend developer
+* Ivan Nikonorov - [LinkedIn](https://www.linkedin.com/in/ivan-nikanorov-b6922b174/) [GitHub](https://github.com/ra9mls) - QA engineer
 
 ## Team Website
 
@@ -128,13 +118,11 @@ features. These include, but are not limited to;
 ## Relevant Experience
 
 <!-- Please describe (in words) your team's relevant experience, and why you think you are the right team to build this project. You can cite your team's prior experience in similar domains, doing similar dev work, individual team members' backgrounds, etc. -->
-* [Sora](https://github.com/sora-xor)
-* [Hashi] (TODO ADD LINK - private repository) - Ethereum <-> Substrate bridge.
-* [Fuhon](https://github.com/filecoin-project/cpp-filecoin) - C++ filecoin implementation
-
-## Team code repositories
-
-<!-- Please provide links to your team's prior code repos for similar or related projects. -->
+SORAMITSU is a global technology company was established in 2016 and delivers blockchain-based solutions. Our most relevant projects are:
+* [Sora Network](https://sora.org) - [Kusama parachain](https://parachains.info/details/sora#about). The SORA Network is a Substrate network providing tools for decentralized applications including bridging tokens to other blockchains. [GitHub repositories](https://github.com/sora-xor). The project includes:
+  * [Polkaswap](https://polkaswap.io) - DEX on SORA Network. The project was launched in may 2021.
+  * [Hashi bridge](https://polkaswap.io/#/bridge) - Polkaswap bridge between Ethereum and Sora Substrate network. Allows transfer of ETH and ERC20 tokens. 
+* [Fuhon](https://github.com/filecoin-project/cpp-filecoin) - C++ Filecoin node and miner implementation.
 
 # Additional Information
 
