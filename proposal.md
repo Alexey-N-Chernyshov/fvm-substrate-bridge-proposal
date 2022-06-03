@@ -62,7 +62,7 @@ determine them.
 Decentralized bridge infrastructure between Filecoin and Substrate based blockchains.
 - [Specification and documentation](https://soramitsu.atlassian.net/wiki/spaces/FIL/pages/3651633155/FVM+-+Substrate+bridge).
 - Source code for Relayer daemon, Substrate pallet and Filecoin smart contracts.
-- Additionally, Filecoin listed on Polkaswap (Substrate-based DEX in
+- Additionally, Filecoin listed on [Polkaswap](https://polkaswap.io/) (Substrate-based DEX in
   the SORA network)
 
 ## Development Roadmap
@@ -120,7 +120,7 @@ features. These include, but are not limited to;
 <!-- Please describe (in words) your team's relevant experience, and why you think you are the right team to build this project. You can cite your team's prior experience in similar domains, doing similar dev work, individual team members' backgrounds, etc. -->
 SORAMITSU is a global technology company was established in 2016 and delivers blockchain-based solutions. Our most relevant projects are:
 * [Sora Network](https://sora.org) - [Kusama parachain](https://parachains.info/details/sora#about). The SORA Network is a Substrate network providing tools for decentralized applications including bridging tokens to other blockchains. [GitHub repositories](https://github.com/sora-xor). The project includes:
-  * [Polkaswap](https://polkaswap.io) - DEX on SORA Network. The project was launched in may 2021.
+  * [Polkaswap](https://polkaswap.io) - DEX on SORA Network. The project was launched in april 2021.
   * [Hashi bridge](https://polkaswap.io/#/bridge) - Polkaswap bridge between Ethereum and Sora Substrate network. Allows transfer of ETH and ERC20 tokens. 
 * [Fuhon](https://github.com/filecoin-project/cpp-filecoin) - C++ Filecoin node and miner implementation.
 
