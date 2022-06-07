@@ -131,7 +131,7 @@ Development of economical model and integration into Sora ecosystem. Deployment 
 
 ### Milestone 5 - Maintenance 
 
-Node maintenance, updates and security, further features that will come with development of FVM.
+Node and realy application maintenance, updates and security, further features that will come with development of FVM.
 * Team: N/A
 * Estimates: N/A
 
@@ -143,18 +143,18 @@ Total estimated: 640 h
 ## Maintenance and Upgrade Plans
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
-Long term maintanance will be provided as FVM updates and new
-features. These include, but are not limited to;
-- Filecoin finalization protocol updates to be used for transaction finalization on substrate.
-- BEEFY protocol updates.
-- Substrate protocol updates.
-- Feature request implementations.
+Github repository will be open and will be maintained by team as a part of [Soramitsu organization](https://github.com/soramitsu).
+Long term maintanance will be provided as FVM updates and new features. These include, but are not limited to:
+- Filecoin finalization protocol updates to be used for transaction finalization on substrate,
+- BEEFY protocol updates,
+- Feature requests implementation.
+With the development of FVM infrastracture, new application will arise on Filecoin and they can be integrated into Substrate based networks with our bridge.
 
 # Team
 
 ## Team Members
 
-* Alexey Chernyshov - [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov) - Tech lead,participated in Fuhon - Filecoin C++ implementation.
+* Alexey Chernyshov - [LinkedIn](https://www.linkedin.com/in/alexey-chernyshov-029b3912b/) [GitHub](https://github.com/Alexey-N-Chernyshov) - Tech lead, participated in Fuhon - Filecoin C++ implementation.
 * Vladimir Stepanenko - [LinkedIn](https://www.linkedin.com/in/vovac12/) [GitHub](https://github.com/vovac12) - Substrate pallet developer.
 * Ruslan Tushov - [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan) - Cryptographer, filecoin developer, participated in Fuhon - Filecoin C++ implementation.
 * Stefan Popov - [LinkedIn](https://www.linkedin.com/in/stefan-popov-072932170/) [GitHub](https://github.com/stefashkaa) - Frontend developer
