@@ -89,7 +89,7 @@ Drafting architecture and building a prototype which transfers blocks between ne
 	* Local network deployment: 20 h
 	* Testing: 40 h
 	* **Total**: 280 h
-* Funding requested: TBD
+* Funding requested: $22400
 
 ### Milestone 2 - Finalization
 
@@ -108,7 +108,7 @@ Finalization on Filecoin and finalization on Substrate.
 	* Local network deployment: 20 h
 	* Testing: 40 h
 	* **Total**: 240 h
-* Funding requested: TBD
+* Funding requested: $19200
 
 ### Milestone 3 - Replace hardcoded bridge actor with programmable
 
@@ -121,7 +121,7 @@ Since finalization on Filecoin is required and bridge actors cannot be deployed 
 	* Deployment: 40 h
 	* Testing: 40 h
 	* **Total**: 120 h
-* Funding requested: TBD
+* Funding requested: $9600
 
 ### Milestone 4 - Intergration with Polkaswap
 
@@ -139,6 +139,7 @@ Node and realy application maintenance, updates and security, further features t
 
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
 Total estimated: 640 h
+Total funding requested: $51200
 
 ## Maintenance and Upgrade Plans
 
