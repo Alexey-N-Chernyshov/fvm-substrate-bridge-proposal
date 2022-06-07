@@ -74,20 +74,71 @@ Decentralized bridge infrastructure between Filecoin and Substrate based blockch
 <!-- - How many people will be working on each milestone and their roles -->
 <!-- - The amount of funding required for each milestone -->
 <!-- - How much time this milestone will take to achieve (using real dates) -->
-1) **PoC prototype** - transfer blocks between networks without
-finalization. 
-	* The stage includes following deliverables: relayer and substrate pallete. 
-	* Definition of done: filecoin block headers are on substrate network and substrate transactions are on filecoin network. This stage doesn't imply any validation or finalization.
-2) **Finalization on Substrate pallet**; TODO describe tickets, blocks, miner signature validation, miner actor state diff, etc. May be broken down into more stages.
-3) **Finalization on Filecoin with BEEFY protocol**; Programmable FVM with
-contracts is needed. In the meantime, it can be substituted with a predefined actor in FVM fork.
-4) **Replace hardcoded bridge actor** with contract as soon as programmable FVM is released.
-5) **Intergration to Polkaswap**, economical model.
-6) **Maintenance**
+### Milestone 1 - PoC prototype
+
+Drafting architecture and building a prototype which transfers blocks between networks without finalization. Deploybg a local network with Filecoin and Substrate nodes.
+
+* The stage includes following deliverables: relayer application, filecoin actor and substrate pallete.
+* Definition of done: filecoin block headers are on substrate network and substrate transactions are on filecoin network. This stage doesn't imply any validation or finalization.
+* Team: full team involved.
+* Estimates: 
+	* Relayer: 80 hours
+	* Substrate pallet: 40 h
+	* Filecoin actor: 40 h
+	* Frontend: 60 h
+	* Local network deployment: 20 h
+	* Testing: 40 h
+	* **Total**: 280 h
+* Funding requested: TBD
+
+### Milestone 2 - Finalization
+
+Finalization on Filecoin and finalization on Substrate.
+
+**Finalization of Substrate on Filecoin with [BEEFY protocol](https://github.com/paritytech/grandpa-bridge-gadget)** - implementation of effective finalisation of Substrate blocks on Filecoin network. The protocol was developed for Ethereum VM, but it can be adopted for FVM. In the meantime, when programmable FVM is missing, it can be substituted with a predefined builtin actor in FVM fork. Later, with FVM full release code of programmable actor will be compiled in FVM WASM.
+
+**Finalization of Filecoin blocks on Substrate pallet** - Filecoin block validation - checks of miner pubkeys, power, election ticket and drand. Validation requires lookback state since miner can change public key or power, so state changes are needed. We can effectevly compute change diffs and build Merkle proofs with this changes.
+
+* Definition of done: Filecoin blocks are finalized on Substrate and Substrate blocks are finalized on Filecoin chain in local network.
+* Team: full team involved.
+* Estimates: 
+	* Substrate pallet finalization: 40 h
+	* Filecoin actor: 80 h
+	* Frontend: 60 h
+	* Local network deployment: 20 h
+	* Testing: 40 h
+	* **Total**: 240 h
+* Funding requested: TBD
+
+### Milestone 3 - Replace hardcoded bridge actor with programmable
+
+Since finalization on Filecoin is required and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, project cannot be released before programmable FVM is launched. After the programmable FVM is released and Filecoin bridge actor can be adopted for programmbale FVM and deployed in Filecoin mainnet in testing mode.
+
+* Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
+* Team: full team involved.
+* Estimates: 
+	* Filecoin actor: 40 h
+	* Deployment: 40 h
+	* Testing: 40 h
+	* **Total**: 120 h
+* Funding requested: TBD
+
+### Milestone 4 - Intergration with Polkaswap
+
+Development of economical model and integration into Sora ecosystem. Deployment of relayer application, integration of Substrate pallet into Soranet mainnet, deployment of actor bridge contract on Filecoin mainnet, integration into Polkaswap dApp interfaces.
+* Team: N/A
+* Estimates: N/A
+
+### Milestone 5 - Maintenance 
+
+Node maintenance, updates and security, further features that will come with development of FVM.
+* Team: N/A
+* Estimates: N/A
 
 ## Total Budget Requested
 
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
+Total estimated: 640 h
 
 ## Maintenance and Upgrade Plans
 
