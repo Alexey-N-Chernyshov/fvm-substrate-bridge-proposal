@@ -4,7 +4,7 @@
 
 **Proposal Category:** Multiple categories, including: `app-dev`, `integration-adoption`, `research`
 
-**Proposer:** `replace with your GitHub username`
+**Proposer:** `Alexey-N-Chernyshov`
 
 **(Optional) Technical Sponsor:** N/A
 
