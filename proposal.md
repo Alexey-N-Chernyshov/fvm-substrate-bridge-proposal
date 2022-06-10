@@ -139,6 +139,7 @@ Node and realy application maintenance, updates and security, further features t
 
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
 Total estimated: 640 h
+
 Total funding requested: $51200
 
 ## Maintenance and Upgrade Plans
