@@ -4,7 +4,7 @@
 
 **Proposal Category:** Multiple categories, including: `app-dev`, `integration-adoption`, `research`
 
-**Proposer:** `Alexey-N-Chernyshov`
+**Proposer:** `kamilsa`
 
 **(Optional) Technical Sponsor:** N/A
 
