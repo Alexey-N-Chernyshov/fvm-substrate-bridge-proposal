@@ -17,15 +17,7 @@
 <!-- - Describe why your solution is going to adequately solve this problem. -->
 
 <!-- This section should be 2-3 paragraphs long. -->
-Blockchain interoperability is a cornerstone of Web 3.0. The
-introduction of the FVM enables the implementation of a bridge between
-Filecoin and Substrate [via Smart
-Contracts](https://wiki.polkadot.network/docs/learn-bridges#via-smart-contracts). There
-are existing bridges for PoW (Bitcoin, Ethereum) and PoA blockchains
-to Substrate. Our proposal is to add PoST consensus as well. At
-first, this bridge will allow FIL transfers across blockchains, at a
-later point, with FVM contracts available, it will be possible to delegete contract calls across chains.
-More detailed [project specification is available here](https://soramitsu.atlassian.net/wiki/spaces/FIL/pages/3651633155/FVM+-+Substrate+bridge).
+Blockchain interoperability is a cornerstone of Web 3.0. The [introduction of the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) enables the implementation of a bridge between Filecoin and Substrate [via Smart Contracts](https://wiki.polkadot.network/docs/learn-bridges#via-smart-contracts). There are existing bridges for PoW (Bitcoin, Ethereum) and PoA blockchains to Substrate. Our proposal is to add PoST consensus as well. At first, this bridge will allow FIL transfers across blockchains, at a later point, with FVM contracts available, it will be possible to delegete contract calls across chains. 
 
 ## Value
 
@@ -35,35 +27,29 @@ More detailed [project specification is available here](https://soramitsu.atlass
 <!-- - What are the risks that will make executing on this project difficult? -->
 
 <!-- This section should be 1-3 paragraphs long. -->
-The value this proposal brings can be summarised as follows: 
-Substrate Interoperability. This will initially consist of the ability
-to transfer FIL across chains. Subsequently, with programmable
-contract development on FVM, it will be possible to call contracts
-(transfer different tokens, add any logic: e.g. transfer market deals
-across chains) across chains.
-Possible risks to this include bugs in the protocol or
-implementation, which could result in funds lost. In order to mitigate
-this risk, it is possible to add emergency stop functionality.
+The value this proposal brings can be summarised as follows: Substrate Interoperability. This will initially consist of the ability to transfer FIL between Filecoin and Substrate based chains. Subsequently, with programmable contract development on FVM, it will be possible to call contracts (transfer different tokens, add any logic: e.g. transfer market deals) across chains. 
+<!-- Possible risks to this include bugs in the protocol or implementation, which could result in funds lost. In order to mitigate this risk, it is possible to add emergency stop functionality. -->
 
-PoST consensus based bridge for Substrate. Filecoin finalization on
+<!-- PoST consensus based bridge for Substrate. Filecoin finalization on
 Substrate will provide confidence for both chains.
 Possible risks to this include bugs in the protocol and
 implementation, if finalization is broken the contract will no longer
 syncronize. In order to solve this, it would be necessary to redeploy and start from some block.
+ -->
+ 
+Bridging FIL to Substrate will allow to take advantage of growing DeFi ecosystem in Polkadot and Kusama networks. Taking into account that the main delivery will be code for Substrate's Runtime pallets, any Substrate based chain will be able to reuse code in order to bring FIL to their network.
+ 
+Overall risks depend on programmable FVM, and can be released only after contracts on Filecoin are available. It is possible to fork FVM and the hardcode bridge actor to our local test network to fully determine them.
 
-Overall risks depend on programmable FVM, and can be released only
-after contracts on Filecoin are available. It is possible to fork FVM
-and the hardcode bridge actor to our local test network to fully
-determine them.
+Another risk is immaturity of FVM, that can lead to bugs and attacks on protocol. Therefore extensive testing on Filecoin and Substrate test networks is necessary. 
 
 ## Deliverables
 
 <!-- Please describe in details what your final deliverable for this project will be. Include a specification of the project and what functionality the software will deliver when it is finished. -->
 Decentralized bridge infrastructure between Filecoin and Substrate based blockchains.
-- [Specification and documentation](https://soramitsu.atlassian.net/wiki/spaces/FIL/pages/3651633155/FVM+-+Substrate+bridge).
+- Specification and documentation.
 - Source code for Relayer daemon, Substrate pallet and Filecoin smart contracts.
-- Additionally, Filecoin listed on [Polkaswap](https://polkaswap.io/) (Substrate-based DEX in
-  the SORA network)
+- Additionally, Filecoin listed on Test version of [Polkaswap](https://test.polkaswap.io/#/swap) (Substrate-based DEX in the SORA network) and eventually in the mainnet.
 
 ## Development Roadmap
 
@@ -76,12 +62,12 @@ Decentralized bridge infrastructure between Filecoin and Substrate based blockch
 <!-- - How much time this milestone will take to achieve (using real dates) -->
 ### Milestone 1 - PoC prototype
 
-Drafting architecture and building a prototype which transfers blocks between networks without finalization. Deploybg a local network with Filecoin and Substrate nodes.
+Drafting architecture and building a prototype which transfers blocks between networks without finalization. Deploying a local network with Filecoin and Substrate nodes.
 
-* The stage includes following deliverables: relayer application, filecoin actor and substrate pallete.
-* Definition of done: filecoin block headers are on substrate network and substrate transactions are on filecoin network. This stage doesn't imply any validation or finalization.
+* The stage includes following deliverables: relayer application, filecoin actor and Substrate pallet.
+* Definition of done: Filecoin block headers are on Substrate network and Substrate transactions are on filecoin network. This stage doesn't imply any validation or finalization.
 * Team: full team involved.
-* Estimates: 
+* Estimates:
 	* Relayer: 80 hours
 	* Substrate pallet: 40 h
 	* Filecoin actor: 40 h
