@@ -57,7 +57,7 @@ Decentralized bridge infrastructure between Filecoin and Substrate based blockch
 Main components:
 - Filecoin FVM contracts - the core bridge component on Filecoin side. Locks and unlocks FIL during deposits and withdrawals, validates and finalizes Substrate blocks on Filecoin using BEEFY algorithm. We planning to start with hardcoded bridge actor written with Rust and then reuse the code for FVM contract.
 - Substrate pallet - the main bridge component on the Substrate-based chain. It is responsible for minting tokens during deposit to Substrate chain and burning during withdrawal. Also validates and finalizes Filecoin messages on Substrate chain. For this it stores partial Filecoin state needed for validation.
-- Relayer - a daemon running off-chain that watches both blockchains and relays messages across them in both directions. It communicates with nodes by API.
+- Relayer - a daemon running off-chain that watches both blockchains and relays messages across them in both directions.
 
 ## Development Roadmap
 
@@ -155,6 +155,14 @@ With the development of FVM infrastracture, new application will arise on Fileco
 * Ruslan Tushov - [LinkedIn](https://www.linkedin.com/in/ruslan-tushov-5b4581240/) [GitHub](https://github.com/turuslan) - Cryptographer, filecoin developer, participated in Fuhon - Filecoin C++ implementation.
 * Stefan Popov - [LinkedIn](https://www.linkedin.com/in/stefan-popov-072932170/) [GitHub](https://github.com/stefashkaa) - Frontend developer
 * Ivan Nikonorov - [LinkedIn](https://www.linkedin.com/in/ivan-nikanorov-b6922b174/) [GitHub](https://github.com/ra9mls) - QA engineer
+
+## Team Member LinkedIn Profiles
+
+* Alexey Chernyshov - https://www.linkedin.com/in/alexey-chernyshov-029b3912b/
+* Vladimir Stepanenko - https://www.linkedin.com/in/vovac12/
+* Ruslan Tushov - https://www.linkedin.com/in/ruslan-tushov-5b4581240/
+* Stefan Popov - https://www.linkedin.com/in/stefan-popov-072932170/
+* Ivan Nikonorov - https://www.linkedin.com/in/ivan-nikanorov-b6922b174/
 
 ## Team Website
 
