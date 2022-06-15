@@ -72,7 +72,7 @@ Main components:
 
 Drafting architecture and building a prototype which transfers blocks between networks without finalization. Deploying a local network with Filecoin and Substrate nodes.
 
-* The stage includes following deliverables: relayer application, filecoin actor and Substrate pallet.
+* The stage includes following deliverables: relayer application, Filecoin actor and Substrate pallet.
 * Definition of done: Filecoin block headers are on Substrate network and Substrate transactions are on filecoin network. This stage doesn't imply any validation or finalization.
 * Team: full team involved.
 * Estimates:
@@ -89,9 +89,9 @@ Drafting architecture and building a prototype which transfers blocks between ne
 
 Finalization on Filecoin and finalization on Substrate.
 
-**Finalization of Substrate on Filecoin with [BEEFY protocol](https://github.com/paritytech/grandpa-bridge-gadget)** - implementation of effective finalisation of Substrate blocks on Filecoin network. The protocol was developed for Ethereum VM, but it can be adopted for FVM. In the meantime, when programmable FVM is missing, it can be substituted with a predefined builtin actor in FVM fork. Later, with FVM full release code of programmable actor will be compiled in FVM WASM.
+**Finalization of Substrate on Filecoin with [BEEFY protocol](https://github.com/paritytech/grandpa-bridge-gadget)** - implementation of effective finalization of Substrate blocks on Filecoin network. The protocol was developed for Ethereum VM, but it can be adopted for FVM. In the meantime, when programmable FVM is missing, it can be substituted with a predefined builtin actor in FVM fork. Later, with FVM full release code of programmable actor will be compiled in FVM WASM.
 
-**Finalization of Filecoin blocks on Substrate pallet** - Filecoin block validation - checks of miner pubkeys, power, election ticket and drand. Validation requires lookback state since miner can change public key or power, so state changes are needed. We can effectevly compute change diffs and build Merkle proofs with this changes.
+**Finalization of Filecoin blocks on Substrate pallet** - Filecoin block validation - checks of miner pubkeys, power, election ticket and drand. Validation requires lookback state since miner can change public key or power, so state changes are needed. We can effectively compute change diffs and build Merkle proofs with this changes.
 
 * Definition of done: Filecoin blocks are finalized on Substrate and Substrate blocks are finalized on Filecoin chain in local network.
 * Team: full team involved.
@@ -106,7 +106,7 @@ Finalization on Filecoin and finalization on Substrate.
 
 ### Milestone 3 - Replace hardcoded bridge actor with programmable
 
-Since finalization on Filecoin is required and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, project cannot be released before programmable FVM is launched. After the programmable FVM is released and Filecoin bridge actor can be adopted for programmbale FVM and deployed in Filecoin mainnet in testing mode.
+Since finalization on Filecoin is required and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, project cannot be released before programmable FVM is launched. After the programmable FVM is released and Filecoin bridge actor can be adopted for programmable FVM and deployed in Filecoin mainnet in testing mode.
 
 * Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
 * Team: full team involved.
@@ -125,7 +125,7 @@ Development of economical model and integration into Sora ecosystem. Deployment 
 
 ### Milestone 5 - Maintenance
 
-Node and realy application maintenance, updates and security, further features that will come with development of FVM.
+Node and relay application maintenance, updates and security, further features that will come with development of FVM.
 * Team: N/A
 * Estimates: N/A
 
@@ -140,11 +140,11 @@ Total funding requested: $51200
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
 Github repository will be open and will be maintained by team as a part of [Soramitsu organization](https://github.com/soramitsu).
-Long term maintanance will be provided as FVM updates and new features. These include, but are not limited to:
+Long term maintenance will be provided as FVM updates and new features. These include, but are not limited to:
 - Filecoin finalization protocol updates to be used for transaction finalization on substrate,
 - BEEFY protocol updates,
 - Feature requests implementation.
-With the development of FVM infrastracture, new application will arise on Filecoin and they can be integrated into Substrate based networks with our bridge.
+With the development of FVM infrastructure, new application will arise on Filecoin and they can be integrated into Substrate based networks with our bridge.
 
 # Team
 
