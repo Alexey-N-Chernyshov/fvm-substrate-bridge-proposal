@@ -17,7 +17,7 @@
 <!-- - Describe why your solution is going to adequately solve this problem. -->
 
 <!-- This section should be 2-3 paragraphs long. -->
-Blockchain interoperability is a cornerstone of Web 3.0. The [introduction of the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) enables the implementation of a bridge between Filecoin and Substrate [via Smart Contracts](https://wiki.polkadot.network/docs/learn-bridges#via-smart-contracts). There are existing bridges for PoW (Bitcoin, Ethereum) and PoA blockchains to Substrate. Our proposal is to add PoST consensus as well. At first, this bridge will allow FIL transfers across blockchains, at a later point, with FVM contracts available, it will be possible to delegete contract calls across chains. 
+Blockchain interoperability is a cornerstone of Web 3.0. The [introduction of the FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/) enables the implementation of a bridge between Filecoin and Substrate [via Smart Contracts](https://wiki.polkadot.network/docs/learn-bridges#via-smart-contracts). There are existing bridges for PoW (Bitcoin, Ethereum) and PoA blockchains to Substrate. Our proposal is to add PoST consensus as well. At first, this bridge will allow FIL transfers across blockchains, at a later point, with FVM contracts available, it will be possible to delegate contract calls across chains.
 
 ## Value
 
@@ -27,7 +27,7 @@ Blockchain interoperability is a cornerstone of Web 3.0. The [introduction of th
 <!-- - What are the risks that will make executing on this project difficult? -->
 
 <!-- This section should be 1-3 paragraphs long. -->
-The value this proposal brings can be summarised as follows: Substrate Interoperability. This will initially consist of the ability to transfer FIL between Filecoin and Substrate based chains. Subsequently, with programmable contract development on FVM, it will be possible to call contracts (transfer different tokens, add any logic: e.g. transfer market deals) across chains. 
+The value this proposal brings can be summarized as follows: Substrate Interoperability. This will initially consist of the ability to transfer FIL between Filecoin and Substrate based chains. Subsequently, with programmable contract development on FVM, it will be possible to call contracts (transfer different tokens, add any logic: e.g. transfer market deals) across chains.
 <!-- Possible risks to this include bugs in the protocol or implementation, which could result in funds lost. In order to mitigate this risk, it is possible to add emergency stop functionality. -->
 
 <!-- PoST consensus based bridge for Substrate. Filecoin finalization on
@@ -36,12 +36,12 @@ Possible risks to this include bugs in the protocol and
 implementation, if finalization is broken the contract will no longer
 syncronize. In order to solve this, it would be necessary to redeploy and start from some block.
  -->
- 
+
 Bridging FIL to Substrate will allow to take advantage of growing DeFi ecosystem in Polkadot and Kusama networks. Taking into account that the main delivery will be code for Substrate's Runtime pallets, any Substrate based chain will be able to reuse code in order to bring FIL to their network.
- 
+
 Overall risks depend on programmable FVM, and can be released only after contracts on Filecoin are available. It is possible to fork FVM and the hardcode bridge actor to our local test network to fully determine them.
 
-Another risk is immaturity of FVM, that can lead to bugs and attacks on protocol. Therefore extensive testing on Filecoin and Substrate test networks is necessary. 
+Another risk is immaturity of FVM, that can lead to bugs and attacks on protocol. Therefore extensive testing on Filecoin and Substrate test networks is necessary.
 
 ## Deliverables
 
@@ -50,6 +50,14 @@ Decentralized bridge infrastructure between Filecoin and Substrate based blockch
 - Specification and documentation.
 - Source code for Relayer daemon, Substrate pallet and Filecoin smart contracts.
 - Additionally, Filecoin listed on Test version of [Polkaswap](https://test.polkaswap.io/#/swap) (Substrate-based DEX in the SORA network) and eventually in the mainnet.
+
+### Architecture
+![image](pics/bridge_diagram.svg)
+
+Main components:
+- Filecoin FVM contracts - the core bridge component on Filecoin side. Locks and unlocks FIL during deposits and withdrawals, validates and finalizes Substrate blocks on Filecoin using BEEFY algorithm. We planning to start with hardcoded bridge actor written with Rust and then reuse the code for FVM contract.
+- Substrate pallet - the main bridge component on the Substrate-based chain. It is responsible for minting tokens during deposit to Substrate chain and burning during withdrawal. Also validates and finalizes Filecoin messages on Substrate chain. For this it stores partial Filecoin state needed for validation.
+- Relayer - a daemon running off-chain that watches both blockchains and relays messages across them in both directions. It communicates with nodes by API.
 
 ## Development Roadmap
 
@@ -87,7 +95,7 @@ Finalization on Filecoin and finalization on Substrate.
 
 * Definition of done: Filecoin blocks are finalized on Substrate and Substrate blocks are finalized on Filecoin chain in local network.
 * Team: full team involved.
-* Estimates: 
+* Estimates:
 	* Substrate pallet finalization: 40 h
 	* Filecoin actor: 80 h
 	* Frontend: 60 h
@@ -102,7 +110,7 @@ Since finalization on Filecoin is required and bridge actors cannot be deployed 
 
 * Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
 * Team: full team involved.
-* Estimates: 
+* Estimates:
 	* Filecoin actor: 40 h
 	* Deployment: 40 h
 	* Testing: 40 h
@@ -115,7 +123,7 @@ Development of economical model and integration into Sora ecosystem. Deployment 
 * Team: N/A
 * Estimates: N/A
 
-### Milestone 5 - Maintenance 
+### Milestone 5 - Maintenance
 
 Node and realy application maintenance, updates and security, further features that will come with development of FVM.
 * Team: N/A
@@ -160,7 +168,7 @@ With the development of FVM infrastracture, new application will arise on Fileco
 SORAMITSU is a global technology company was established in 2016 and delivers blockchain-based solutions. Our most relevant projects are:
 * [Sora Network](https://sora.org) - [Kusama parachain](https://parachains.info/details/sora#about). The SORA Network is a Substrate network providing tools for decentralized applications including bridging tokens to other blockchains. [GitHub repositories](https://github.com/sora-xor). The project includes:
   * [Polkaswap](https://polkaswap.io) - DEX on SORA Network. The project was launched in april 2021.
-  * [Hashi bridge](https://polkaswap.io/#/bridge) - Polkaswap bridge between Ethereum and Sora Substrate network. Allows transfer of ETH and ERC20 tokens. 
+  * [Hashi bridge](https://polkaswap.io/#/bridge) - Polkaswap bridge between Ethereum and Sora Substrate network. Allows transfer of ETH and ERC20 tokens.
 * [Fuhon](https://github.com/filecoin-project/cpp-filecoin) - C++ Filecoin node and miner implementation.
 
 # Additional Information
