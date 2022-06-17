@@ -59,7 +59,7 @@ Decentralized bridge infrastructure between Filecoin and Substrate-based blockch
 - Additionally, Filecoin is listed on a Test version of [Polkaswap](https://test.polkaswap.io/#/swap) (Substrate-based DEX in the SORA network) and eventually in the mainnet.
 
 ### Architecture
-![image](pics/bridge_diagram.svg)
+![image](https://github.com/Alexey-N-Chernyshov/fvm-substrate-bridge-proposal/raw/master/pics/bridge_diagram.svg)
 
 Main components:
 - Filecoin FVM contracts - the core bridge component on Filecoin side. Locks and unlocks FIL during deposits and withdrawals, validates and finalizes Substrate blocks on Filecoin using BEEFY algorithm. We planning to start with a hardcoded bridge actor written with Rust and then reuse the code for FVM contract.
@@ -106,10 +106,10 @@ Finalization on Filecoin and finalization on Substrate.
 	* Substrate pallet finalization: 40 h
 	* Filecoin actor: 80 h
 	* Frontend: 60 h
-	* Local network deployment: 20 h
+	* Local network deployment: 40 h
 	* Testing: 40 h
-	* **Total**: 240 h
-* Funding requested: $19200
+	* **Total**: 260 h
+* Funding requested: $20800
 
 ### Milestone 3 - Replace hardcoded bridge actor with programmable
 
@@ -124,29 +124,29 @@ Since finalization on Filecoin is required and bridge actors cannot be deployed 
 	* **Total**: 120 h
 * Funding requested: $9600
 
-### Milestone 4 - Integration with Polkaswap
+### Milestone 4 - Integration into Mainnet
 
-Development of economical model and integration into Sora ecosystem. Deployment of relayer application, integration of Substrate pallet into Soranet mainnet, deployment of actor bridge contract on Filecoin mainnet, integration into Polkaswap dApp interfaces.
-* Team: N/A
-* Estimates: N/A
+Deployment of relayer application, integration of Substrate pallet into one of Polkadot/Kusama parachain i.e. Sora network, deployment of actor bridge contract on Filecoin mainnet.
+* Team: full team involved
+* Estimates: TBD
+* Funding requested: to be funded by other sources: Kusama treasury or by one of Parachain's DAO
 
-### Milestone 5 - Maintenance
-
-Node and relay application maintenance, updates, and security, further features that will come with the development of FVM.
-* Team: N/A
-* Estimates: N/A
 
 ## Total Budget Requested
 
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
-Total estimated: 640 h
+Total estimated: 660 h
+Cost of infrastructure for testing: $2000
 
-Total funding requested: $51200
+Total funding requested: $54800
 
 ## Maintenance and Upgrade Plans
 
 <!-- Specify your team's long-term plans to maintain this software and upgrade it over time. -->
-Github repository will be open and will be maintained by the team as a part of [Soramitsu organization](https://github.com/soramitsu).
+
+
+
+Github repository will be open and will be maintained by the team as a part of [Soramitsu organization](https://github.com/soramitsu) for at least a year since the moment of its launch.
 Long-term maintenance will be provided as FVM updates and new features. These include, but are not limited to:
 - Filecoin finalization protocol updates to be used for transaction finalization on Substrate,
 - BEEFY protocol updates,
