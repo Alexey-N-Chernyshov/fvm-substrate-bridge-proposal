@@ -20,7 +20,7 @@
 We are planning to build a bridge between Filecoin and Substrate-based networks that utilize [FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
 
 
-At first, the bridge will allow FIL transfers across blockchains, at a later point, with FVM contracts available, it will be possible to delegate contract calls across chains.
+Initially, the bridge will allow FIL transfers across blockchains, then at a later point, with FVM contracts available, it will be possible to delegate contract calls across chains.
 
 
 The idea behind the project is to build a bridge between Filecoin and Substrate-based networks using a combination of Filecoin FVM [smartcontracts](https://wiki.polkadot.network/docs/learn-bridges#via-smart-contracts), Substrate pallets, and external daemons called relayers. The component that resides on the target chain is able to follow the source chain consensus. Thus FVM contracts must be able to accept and verify Substrate headers. It will use the efficient [BEEFY finality protocol](https://github.com/paritytech/grandpa-bridge-gadget) for the non-substrate network. On the Substrate side, a new protocol for Filecoin message validation and finalization is being designed. It will use a partial Filecoin state for this purpose.
@@ -165,11 +165,11 @@ With the development of FVM infrastructure, any new application developed on Fil
 
 ## Team Member LinkedIn Profiles
 
-* Alexey Chernyshov - https://www.linkedin.com/in/alexey-chernyshov-029b3912b/
-* Vladimir Stepanenko - https://www.linkedin.com/in/vovac12/
-* Ruslan Tushov - https://www.linkedin.com/in/ruslan-tushov-5b4581240/
-* Stefan Popov - https://www.linkedin.com/in/stefan-popov-072932170/
-* Ivan Nikonorov - https://www.linkedin.com/in/ivan-nikanorov-b6922b174/
+* [Alexey Chernyshov](https://www.linkedin.com/in/alexey-chernyshov-029b3912b)
+* [Vladimir Stepanenko](https://www.linkedin.com/in/vovac12)
+* [Ruslan Tushov](https://www.linkedin.com/in/ruslan-tushov-5b4581240)
+* [Stefan Popov](https://www.linkedin.com/in/stefan-popov-072932170)
+* [Ivan Nikonorov](https://www.linkedin.com/in/ivan-nikanorov-b6922b174)
 
 ## Team Website
 
