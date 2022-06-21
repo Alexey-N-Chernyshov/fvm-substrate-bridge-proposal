@@ -189,3 +189,11 @@ SORAMITSU is a global technology company established in 2016 delivering blockcha
 # Additional Information
 
 <!-- Please include any additional information that you think would be useful in helping us to evaluate your proposal. -->
+
+SORAMITSU is a Japanese fintech company with expertise in developing blockchain-based solutions for digital asset and identity management. Our mission is to use blockchain to promote innovation to solve pressing societal challenges.
+
+SORAMITSU is the developer of and major contributor to the open-source blockchain platform Hyperledger Iroha, which is tailored for enterprise and public-sector use. Part of the Linux Foundation's Hyperledger Project, the Iroha blockchain's flexible permissions system and scalable, performant architecture suit it to digital asset and identity management in high-traffic, multi-stakeholder environments.
+
+Utilizing blockchain, SORAMITSU has developed a digital currency for the National Bank of Cambodia, an identity verification system prototype for Bank Central Asia in Indonesia, among others. We have also conducted proof-of-concept tests for several major Japanese enterprises, and are active contributors to open source projects, such as the SORA cryptoeconomic system, the Polkaswap DEX, and the DeFi wallet, Fearless Wallet.
+
+Based on these experiences, SORAMITSU aims to deploy cutting-edge technology on a global level in order to expedite financial inclusion and health, mitigate economic inefficiencies, and contribute to economic growth and development
