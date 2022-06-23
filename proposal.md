@@ -81,16 +81,15 @@ Drafting architecture and building a prototype that transfers blocks between net
 
 * This stage includes the following deliverables: Relayer application, Filecoin actor, and Substrate pallet.
 * Definition of done: Filecoin block headers are on the Substrate network and Substrate transactions are on the Filecoin network. This stage doesn't imply any validation or finalization.
-* Team: Full team involvement.
+* Team: Alexey Chernyshov, Vladimir Stepanenko, Ruslan Tushov, Ivan Nikonorov.
 * Estimates:
 	* Relayer: 80 hours
 	* Substrate pallet: 40 hrs
 	* Filecoin actor: 40 hrs
-	* Frontend: 60 hrs
 	* Local network deployment: 20 hrs
 	* Testing: 40 hrs
-	* **Total**: 280 hrs
-* Funding requested: $22400
+	* **Total**: 220 hrs
+* Funding requested: $17600
 
 ### Milestone 2 - Finalization
 
@@ -105,18 +104,18 @@ Finalization on Filecoin and finalization on Substrate.
 * Estimates:
 	* Substrate pallet finalization: 40 hrs
 	* Filecoin actor: 80 hrs
-	* Frontend: 60 hrs
+	* Frontend: 120 hrs
 	* Local network deployment: 40 hrs
 	* Testing: 40 hrs
-	* **Total**: 260 hrs
-* Funding requested: $20800
+	* **Total**: 320 hrs
+* Funding requested: $25600
 
 ### Milestone 3 - Replace hardcoded bridge actor with the programmable
 
 Since finalization on Filecoin is required, and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, the project cannot be released before the programmable FVM is launched. After the programmable FVM is released, the Filecoin bridge actor can be adopted for programmable FVM and deployed to the Filecoin mainnet in testing mode.
 
 * Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
-* Team: full team involvement.
+* Team: Alexey Chernyshov, Vladimir Stepanenko, Ruslan Tushov, Ivan Nikonorov.
 * Estimates:
 	* Filecoin actor: 40 hrs
 	* Deployment: 40 hrs
