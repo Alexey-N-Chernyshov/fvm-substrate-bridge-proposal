@@ -112,7 +112,7 @@ Finalization on Filecoin and finalization on Substrate.
 
 ### Milestone 3 - Replace hardcoded bridge actor with the programmable
 
-Since finalization on Filecoin is required, and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, the project cannot be released before the programmable FVM is launched. After the programmable FVM is released, the Filecoin bridge actor can be adopted for programmable FVM and deployed to the Filecoin mainnet in testing mode.
+Since finalization on Filecoin is required, and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, the project cannot be released before the programmable FVM is launched. After the programmable FVM is released, the Filecoin bridge actor can be adopted for programmable FVM and deployed to the Filecoin mainnet in testing mode. We are planning to reuse hardcoded Filecoin bridge actor code written in Rust in the previous stage.
 
 * Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
 * Team: Alexey Chernyshov, Vladimir Stepanenko, Ruslan Tushov, Ivan Nikonorov.
