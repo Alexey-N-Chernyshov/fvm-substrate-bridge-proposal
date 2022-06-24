@@ -17,7 +17,7 @@
 <!-- - Describe why your solution is going to adequately solve this problem. -->
 
 <!-- This section should be 2-3 paragraphs long. -->
-We are planning to build a bridge between Filecoin and Substrate-based networks that utilize [FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
+We are planning to build a bridge between Filecoin and Substrate-based networks that utilizes [FVM](https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/).
 
 
 Initially, the bridge will allow FIL transfers across blockchains, then at a later point, with FVM contracts available, it will be possible to delegate contract calls across chains.
@@ -33,7 +33,7 @@ The idea behind the project is to build a bridge between Filecoin and Substrate-
 <!-- - What are the risks that will make executing on this project difficult? -->
 
 <!-- This section should be 1-3 paragraphs long. -->
-The value this proposal brings can be summarized as follows: Substrate Interoperability, which is a cornerstone of Web 3.0. will initially consist of the ability to transfer FIL between Filecoin and Substrate-based chains. Subsequently, with programmable contract development on FVM, it will be possible to call contracts (transfer different tokens, add any logic: e.g. transfer market deals) across chains which will increase the value that a bridge such as the one we are proposing can provide.
+The value this proposal brings can be summarized as follows: Substrate Interoperability, which is a cornerstone of Web 3.0 will initially consist of the ability to transfer FIL between Filecoin and Substrate-based chains. Subsequently, with programmable contract development on FVM, it will be possible to call contracts (transfer different tokens, add any logic: e.g. transfer market deals) across chains which will increase the value that a bridge such as the one we are proposing can provide.
 <!-- Possible risks to this include bugs in the protocol or implementation, which could result in funds lost. In order to mitigate this risk, it is possible to add emergency stop functionality. -->
 
 <!-- PoST consensus based bridge for Substrate.
@@ -84,12 +84,12 @@ Drafting architecture and building a prototype that transfers blocks between net
 * Team: Alexey Chernyshov, Vladimir Stepanenko, Ruslan Tushov, Ivan Nikonorov.
 * Estimates:
 	* Relayer: 80 hours
-	* Substrate pallet: 40 hrs
-	* Filecoin actor: 40 hrs
+	* Substrate pallet: 120 hrs
+	* Filecoin actor: 120 hrs
 	* Local network deployment: 20 hrs
 	* Testing: 40 hrs
-	* **Total**: 220 hrs
-* Funding requested: $17600
+	* **Total**: 380 hrs
+* Funding requested: $30400
 
 ### Milestone 2 - Finalization
 
@@ -102,9 +102,8 @@ Finalization on Filecoin and finalization on Substrate.
 * Definition of done: Filecoin blocks are finalized on Substrate and Substrate blocks are finalized on the Filecoin chain in a local network.
 * Team: full team involvement.
 * Estimates:
-	* Substrate pallet finalization: 40 hrs
-	* Filecoin actor: 80 hrs
-	* Frontend: 120 hrs
+	* Substrate pallet finalization: 120 hrs
+	* Filecoin actor: 120 hrs
 	* Local network deployment: 40 hrs
 	* Testing: 40 hrs
 	* **Total**: 320 hrs
@@ -112,7 +111,7 @@ Finalization on Filecoin and finalization on Substrate.
 
 ### Milestone 3 - Replace hardcoded bridge actor with the programmable
 
-Since finalization on Filecoin is required, and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, the project cannot be released before the programmable FVM is launched. After the programmable FVM is released, the Filecoin bridge actor can be adopted for programmable FVM and deployed to the Filecoin mainnet in testing mode. We are planning to reuse hardcoded Filecoin bridge actor code written in Rust in the previous stage.
+Since finalization on Filecoin is required, and bridge actors cannot be deployed on Filecoin mainnet without the programmable FVM, the project cannot be released before the programmable FVM is launched. After the programmable FVM is released, the Filecoin bridge actor can be adopted for programmable FVM and deployed to the Filecoin mainnet in testing mode. We are planning to reuse the hardcoded Filecoin bridge actor code written in Rust in the previous stage and compile it into WASM programmable actor.
 
 * Definition of done: Filecoin bridge actor deployed on Filecoin testnet.
 * Team: Alexey Chernyshov, Vladimir Stepanenko, Ruslan Tushov, Ivan Nikonorov.
@@ -137,7 +136,7 @@ Deployment of relayer application, integration of Substrate pallet into a Polkad
 Total estimated: 660 hrs
 Cost of infrastructure for testing: $2000
 
-Total funding requested: $54800
+Total funding requested: $67600
 
 ## Maintenance and Upgrade Plans
 
