@@ -134,6 +134,7 @@ Deployment of relayer application, integration of Substrate pallet into a Polkad
 
 <!--Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds. -->
 Total estimated: 660 hrs
+
 Cost of infrastructure for testing: $2000
 
 Total funding requested: $67600
